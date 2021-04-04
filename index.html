@@ -8,11 +8,7 @@ layout: default
 
 <div class="posts">
   {% for post in paginator.posts %}
-    <article class="post">
-      <h1>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-      </h1>
-
+  <article class="post">
       <div>
         <span class="date">
           {{ post.date | date: "%Y-%m-%d" }}
@@ -27,13 +23,18 @@ layout: default
           </li>
           {% endfor %}
         </ul>
+        <div class="title">
+          <a href="{{ site.baseurl }}{{ post.url }}"> {{ post.title }} </a>
+        </div>
       </div>
 
+      <!--
       <div class="entry">
         {{ post.excerpt }}
       </div>
 
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      -->
     </article>
   {% endfor %}
 </div>

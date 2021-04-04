@@ -312,7 +312,7 @@ img {
 //
 
 .wrapper-masthead {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .masthead {
@@ -356,9 +356,8 @@ img {
   color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
-  font-weight: 300;
-  font-size: 28px;
-  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 35px;
 }
 
 .site-description {
@@ -400,8 +399,25 @@ nav {
 
 // Posts
 .posts > .post {
+  padding-top: 2em;
   padding-bottom: 2em;
   border-bottom: 1px solid $divider-color;
+
+  a {
+    color: $base-color;
+  &:hover,
+  &:focus {
+      color: $link-color;
+    }
+  }
+
+  .title {
+    color: $base-color;
+    margin-bottom: .3rem;
+    font-size : 1.8rem;
+    font-weight: 600;
+  }
+
 }
 
 .posts > .post:last-child {
