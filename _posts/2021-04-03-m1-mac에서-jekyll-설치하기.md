@@ -3,7 +3,6 @@ layout: post
 title: M1 mac에서 jekyll 설치하기
 date: 2021-04-03 08:43:56 +0000
 tags: cs cs/jekyll 
-uuid: 27B1E6B4-04B1-4F1B-B833-5EFEA64ECCB9-405-00000C7BC670EDCA
 ---
 
 ## ruby 설정
@@ -12,6 +11,11 @@ rbenv 로 ruby를 설치하려고 삽질을 좀 했는데 결론적으로 다음
 [Installation issues with Arm Mac (M1 Chip) · Issue #1691 · rbenv/ruby-build · GitHub](https://github.com/rbenv/ruby-build/issues/1691)
 ```bash
 RUBY_CFLAGS="-Wno-error=implicit-function-declaration" rbenv install 2.5.8
+```
+
+## 실행
+```bash
+bundle exec jekyll serve
 ```
 
 

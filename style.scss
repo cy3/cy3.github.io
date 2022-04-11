@@ -75,7 +75,7 @@ p {
 }
 
 a {
-  color: $link-color;
+  color: $link-color2;
   text-decoration: none;
   cursor: pointer;
   &:hover, &:active {
@@ -312,6 +312,7 @@ img {
 //
 
 .wrapper-masthead {
+  margin-top: 10px;
   margin-bottom: 0px;
 }
 
@@ -327,8 +328,8 @@ img {
 .site-avatar {
   margin: 15px;
   float: left;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 
   img {
@@ -341,13 +342,18 @@ img {
 
 }
 
+
 .site-name {
   margin: 10px;
   color: $darkGray;
   cursor: pointer;
-  font-family: $helveticaNeue;
+  //font-family: $helveticaNeue;
   font-weight: 500;
-  font-size: 36px;
+  font-size: 30px;
+  span {
+    color: $link-color;
+  }
+  font-family: "Nunito Sans","Noto Sans KR","Noto Sans","Helvetica Neue","Segoe UI",Helvetica,Arial,sans-serif;
 
   @include mobile {
     margin: 15px 10px;
@@ -363,9 +369,11 @@ img {
 
 nav {
   float: right;
-  margin-top: 13px; // @TODO: Vertically middle align
+  //margin-top: 13px; // @TODO: Vertically middle align
   font-family: $helveticaNeue;
-  font-size: 36px;
+  font-size: 30px;
+  margin: 15px;
+  margin-right: 10px;
 
 
   a {
@@ -380,8 +388,8 @@ nav {
 
 // Posts
 .posts > .post {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
   border-bottom: 1px solid $divider-color;
 
   a {
@@ -395,15 +403,16 @@ nav {
   .title {
     color: $base-color;
     margin-bottom: .3rem;
-    font-size : 1.8rem;
+    font-size : 1.2rem;
     font-weight: 600;
   }
 
 }
 
 .posts > .post:last-child {
-  padding-bottom: 1em;
+  padding-bottom: 0.5em;
   border-bottom: none;
+  border-bottom: 1px solid $divider-color;
 }
 
 .post {
@@ -416,6 +425,10 @@ nav {
     font-size: $small-font-size;
     color: $base-lighten-color;
     margin-right: 3px;
+  }
+
+  .info {
+    float: right;
   }
 
   .tag {
