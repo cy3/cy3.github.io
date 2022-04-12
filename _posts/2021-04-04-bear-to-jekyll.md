@@ -2,7 +2,7 @@
 layout: post
 title: bear to jekyll
 date: 2021-04-04 01:24:59 +0000
-tags: cs cs/jekyll posts/updating 
+tags: cs jekyll updating 
 ---
 
 ## bear에서 쓴 글 불러오기
