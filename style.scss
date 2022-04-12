@@ -454,6 +454,12 @@ nav {
     }
   }
 
+  .title::after{
+    clear:both;
+    display:block;
+    content: '';
+  }
+
   .comments {
     margin-top: 10px;
   }
