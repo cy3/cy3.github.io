@@ -15,7 +15,7 @@ tags: cs jekyll updating
 
 [Fixed path to the sqlite database by harshdeep · Pull Request #11 · redspider/pybear · GitHub](https://github.com/redspider/pybear/pull/11/commits/181501a57fb5e1b2098e0b1bd7d5356d40520336)
 
-header 출력이나 image 출력 문제 등으로 바로 사용이 불가능하여, 조금 수정한다.
+header 출력이나 image 출력 문제 등으로 바로 사용이 불가능하여, 조금 수정하였다.
 
 ## 사용법
 bear에서 jekyll로 올리고 싶은 글 들에 `#posts` 태그를 붙인다.
