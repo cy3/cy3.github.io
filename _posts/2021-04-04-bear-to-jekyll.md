@@ -15,12 +15,12 @@ tags: cs jekyll updating
 
 [Fixed path to the sqlite database by harshdeep · Pull Request #11 · redspider/pybear · GitHub](https://github.com/redspider/pybear/pull/11/commits/181501a57fb5e1b2098e0b1bd7d5356d40520336)
 
-header 출력이나 image 출력 문제 등으로 바로 사용이 불가능하여, 조금 수정하였다.
+header 출력이나 image 출력 문제 등으로 바로 사용이 불가능하여, 조금 수정하여서 [GitHub - cy3/pybear](https://github.com/cy3/pybear) 에 올려두었다.
 
 ## 사용법
 bear에서 jekyll로 올리고 싶은 글 들에 `#posts` 태그를 붙인다.
 본문 첫 두 줄은 자르기 때문에 (제목과 태그를 본문에서 제거) 제목 다음줄에 태그를 넣어야 한다.
-jekyll 폴더에서 다음 스크립트를 실행한다.
+jekyll 폴더에서 해당 git을 clone한 후에, 다음 스크립트를 실행한다.
 ```bash
 ./bear_import.sh
 ```
