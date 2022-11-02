@@ -99,3 +99,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+include:
+  - _images

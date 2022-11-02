@@ -1,6 +1,6 @@
 ---
 layout: post
-title: M1 mac에서 jekyll 설치하기
+title: M1 mac에서 Jekyll 설치하기
 date: 2021-04-03 08:43:56 +0000
 tags: cs jekyll 
 ---

@@ -7,7 +7,7 @@ tags: cs python
 
 다음과 같은 png 파일에서 matrix를 뽑아내보자.
 
-![image](/images/2022-04-12-python-mbti-이미지에서-matrix-데이터-추출하기/matrix.png){: .center-image}
+![image](/_images/2022-04-12-python-mbti-이미지에서-matrix-데이터-추출하기/matrix.png){: .center-image}
 
 ---
 
@@ -46,7 +46,7 @@ plt.show()
 rgbmat.shape
 ```
 
-![image](/images/2022-04-12-python-mbti-이미지에서-matrix-데이터-추출하기/608E9FF2-CA7A-44D6-8487-7C50EFC346B1.png){: .center-image}
+![image](/_images/2022-04-12-python-mbti-이미지에서-matrix-데이터-추출하기/608E9FF2-CA7A-44D6-8487-7C50EFC346B1.png){: .center-image}
 
 RGB값들이 일정하지 않기 때문에 k-means 를 사용해서 색상을 매핑해 줄 것이다.
 먼저 RGB값들을 plot해 본다.
@@ -61,7 +61,7 @@ plt.show()
 ```
 
 
-![image](/images/2022-04-12-python-mbti-이미지에서-matrix-데이터-추출하기/45BD60A3-5054-4634-AF38-E9657DD9F758.png){: .center-image}
+![image](/_images/2022-04-12-python-mbti-이미지에서-matrix-데이터-추출하기/45BD60A3-5054-4634-AF38-E9657DD9F758.png){: .center-image}
 
 쉽게 클러스터링 할 수 있을만한 모양이 나왔다. k-means를 돌려서 잘 분류됬는지 확인해 본다.
 
@@ -76,7 +76,7 @@ ax.scatter(data[:,0],data[:,1], data[:,2], c=ids.labels_)
 plt.show()
 ```
 
-![image](/images/2022-04-12-python-mbti-이미지에서-matrix-데이터-추출하기/3CC830FB-187F-4FF1-91DB-5BDC5B424543.png){: .center-image}
+![image](/_images/2022-04-12-python-mbti-이미지에서-matrix-데이터-추출하기/3CC830FB-187F-4FF1-91DB-5BDC5B424543.png){: .center-image}
 
 이제 matrix 형태로 바꾼다.
 
@@ -91,5 +91,5 @@ for i in range(16):
 convmat
 ```
 
-![image](/images/2022-04-12-python-mbti-이미지에서-matrix-데이터-추출하기/7B09BD03-54CD-4649-BA5C-E99D53559FE6.png){: .center-image}
+![image](/_images/2022-04-12-python-mbti-이미지에서-matrix-데이터-추출하기/7B09BD03-54CD-4649-BA5C-E99D53559FE6.png){: .center-image}
 

@@ -416,6 +416,9 @@ nav {
 }
 
 .post {
+  text-align: left;
+  word-break: keep-all;
+
   h1 {
     margin-bottom: .1em;
   }
